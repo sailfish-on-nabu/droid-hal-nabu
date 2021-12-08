@@ -25,15 +25,10 @@
 %define straggler_files \
   /acct \
   /bugreports \
-  /bt_firmware \
   /cache \
-  /charger \
   /d \
-  /dsp \
-  /firmware \
   /odm \
   /oem \
-  /persist \
   /product \
   /sdcard \
   /storage \
