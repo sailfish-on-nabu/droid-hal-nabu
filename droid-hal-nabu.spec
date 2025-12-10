@@ -27,15 +27,13 @@
   /bugreports \
   /cache \
   /d \
-  /odm \
   /oem \
-  /product \
   /sdcard \
   /storage \
 %{nil}
 
 
 # On Android 8 the system partition is (intended to be) mounted on /.
-%define makefstab_skip_entries /vendor /dev/stune /dev/cpuset /sys/fs/pstore /dev/cpuctl
+%define makefstab_skip_entries / /odm /product /system /system_ext /vendor
 
 %include rpm/dhd/droid-hal-device.inc
