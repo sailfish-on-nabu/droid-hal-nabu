@@ -34,6 +34,6 @@
 
 
 # On Android 8 the system partition is (intended to be) mounted on /.
-%define makefstab_skip_entries / /odm /product /system /system_ext /vendor
+%define makefstab_skip_entries / /odm /product /system /system_ext /vendor /vendor/firmware_mnt /vendor/bt_firmware /vendor/dsp
 
 %include rpm/dhd/droid-hal-device.inc
